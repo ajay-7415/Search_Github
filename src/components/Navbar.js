@@ -1,10 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useAuth0 } from '@auth0/auth0-react';
+import React from 'react'
+import styled from 'styled-components'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Navbar = () => {
-  return <h2>navbar component</h2>;
-};
+  return (
+    <Wrapper>
+      <h4>Github profile </h4>
+    </Wrapper>
+  )
+}
 
 const Wrapper = styled.nav`
   padding: 1.5rem;
@@ -17,7 +21,7 @@ const Wrapper = styled.nav`
   align-items: center;
   gap: 1.5rem;
   h4 {
-    margin-bottom: 0;
+    margin: 0 auto;
     font-weight: 400;
   }
   img {
@@ -35,6 +39,6 @@ const Wrapper = styled.nav`
     color: var(--clr-grey-5);
     cursor: pointer;
   }
-`;
+`
 
-export default Navbar;
+export default Navbar
