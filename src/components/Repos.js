@@ -16,7 +16,7 @@ const Repos = () => {
     }
   }
   const next = () => {
-    if (page < 9) {
+    if (page < repos.length - 1) {
       setPage((oldPage) => oldPage + 1)
     }
   }
