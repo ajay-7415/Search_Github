@@ -22,6 +22,7 @@ const Dashboard = () => {
       <Search />
       <UserInfo />
       <User />
+      <Repos />
     </main>
   )
 }
